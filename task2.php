@@ -5,6 +5,27 @@
         
         
         <?php
+
+            include "connect.php";
+
+            // check click create or no ?
+                if(isset($_POST['submit'])) {
+
+
+            // get data in form
+                $name = $_POST['name'];
+                $gender = $_POST['gender'];
+                $age = $_POST['age'];
+                $address = $_POST['address'];
+
+            // create query
+                $query = "INSERT INTO db_user (name, gender, age, address) VALUES ('$name', '$gender', '$age', '$address')";
+                $data = $db->prepare($query);
+                $data->execute();
+
+
+            }
+
                 $students = array (
                     array(
                         "name" => "Garri Norman Ivan Nacov",
