@@ -55,7 +55,6 @@
                             <th>Gender</th>
                             <th>Age</th>
                             <th>Address</th>
-                            <th>Keterangan</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,10 +66,6 @@
                             <td><?php echo $value["gender"]; ?></td>
                             <td><?php echo $value["age"]; ?></td>
                             <td><?php echo $value["address"]; ?></td>
-                            <td>
-                                <button>Edit</button>
-                                <button>Delete</button>
-                            </td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
